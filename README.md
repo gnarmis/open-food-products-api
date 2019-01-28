@@ -16,9 +16,9 @@ postgrest to use that for all unauthenticated users.
 
 **Example queries:**
 
-- using full text search: https://open-food-api-demo.kilotau.com/food_products?q=plfts.ice+cream
-- using the equivalent of `foo LIKE '%bar%`: https://open-food-api-demo.kilotau.com/food_products?ingredients=like.*egg*
-- using a date field: https://open-food-api-demo.kilotau.com/food_products?date_available=gt.2018-06-01
+- using full text search: [`https://open-food-api-demo.kilotau.com/food_products?q=plfts.ice+cream`](https://open-food-api-demo.kilotau.com/food_products?q=plfts.ice+cream)
+- using the equivalent of `foo LIKE '%bar%`: [`https://open-food-api-demo.kilotau.com/food_products?ingredients=like.*egg*`](https://open-food-api-demo.kilotau.com/food_products?ingredients=like.*egg*)
+- using a date field: [`https://open-food-api-demo.kilotau.com/food_products?date_available=gt.2018-06-01`](https://open-food-api-demo.kilotau.com/food_products?date_available=gt.2018-06-01)
 
 API documentation is at [root](https://open-food-api-demo.kilotau.com/). And more general information about filters/parameters is [here in postgrest's docs](http://postgrest.org/en/v5.2/api.html#).
 
