@@ -11,7 +11,7 @@ Powered by [postgrest](https://github.com/PostgREST/postgrest), because I alread
 
 1.  Install [Docker](https://www.docker.com/products/docker-desktop)
 
-2.  Download [`food_products.sql.zip`](https://drive.google.com/file/d/1iS77daUjFuMvcqA-JhWMde7a4KQkAvgd/view?usp=sharing) to `./db/food_products.sql.zip`
+2.  Download [`food_products.sql.zip`](https://www.dropbox.com/s/e666mk2aj4lf6ve/food_products.sql.zip?dl=0) to `./db/food_products.sql.zip`
 
 3.  Make `db.env` and `postgrest.env`. There are example files: `db.env.example`
     and `postgrest.env.example`. You can set your own db password by replacing
