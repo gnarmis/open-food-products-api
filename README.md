@@ -7,6 +7,16 @@ also nutritional information. Up to date as of Jan 2019.
 
 Powered by [postgrest](https://github.com/PostgREST/postgrest), because I already cleaned up and put together a postgres database based on information from the BFDL database from USDA.
 
+**Demo API** running on a \$5 Digital Ocean droplet: https://open-food-api-demo.kilotau.com/.
+
+**Example query** using full text search:
+
+```
+https://open-food-api-demo.kilotau.com/food_products?q=plfts.ice+cream
+```
+
+API documentation is at [root](https://open-food-api-demo.kilotau.com/). And more general information about filters/parameters is [here in postgrest's docs](http://postgrest.org/en/v5.2/api.html#).
+
 ## Usage
 
 1.  Install [Docker](https://www.docker.com/products/docker-desktop)
@@ -34,12 +44,6 @@ API docs are at `http://localhost:3000`. Only read access is provided over a
 REST interface, and the data is provided as JSON. There are a number of very
 flexible filters available too! And `postgrest` enables great performance on
 crappy hardware.
-
-Example query using full text search (phrase-based –– see docs above):
-
-```
-http://localhost:3000/food_products?q=plfts.ice+cream
-```
 
 ## Of Interest
 
