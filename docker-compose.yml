@@ -1,5 +1,8 @@
+# This is a Docker Compose manifest file, used by the CLI tool `docker-compose`.
+# Read more: https://docs.docker.com/compose/
 version: "3"
 services:
+  # read more: http://postgrest.org
   postgrest:
     image: postgrest/postgrest:latest
     ports:
@@ -10,6 +13,7 @@ services:
       - ./postgrest.env
     depends_on:
       - db
+  # the db/ subdirectory has relevant files for this service
   db:
     build:
       context: ./db
@@ -18,5 +22,9 @@ services:
       - 5432
     env_file:
       - ./db.env
+    # the host OS's ./db/data is mounted on the container's
+    # /var/lib/postgresql/data path. This means that you can go back up the
+    # ./db/data folder or delete it to effectively "reset" this service to
+    # scratch.
     volumes:
       - ./db/data:/var/lib/postgresql/data
