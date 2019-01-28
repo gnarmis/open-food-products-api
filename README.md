@@ -11,14 +11,16 @@ Powered by [postgrest](https://github.com/PostgREST/postgrest), because I alread
 
 1.  Install [Docker](https://www.docker.com/products/docker-desktop)
 
-2.  Make `db.env` and `postgrest.env`. There are example files: `db.env.example`
+2.  Download [`food_products.sql.zip`](https://drive.google.com/file/d/1iS77daUjFuMvcqA-JhWMde7a4KQkAvgd/view?usp=sharing) to `./db/food_products.sql.zip`
+
+3.  Make `db.env` and `postgrest.env`. There are example files: `db.env.example`
     and `postgrest.env.example`. You can set your own db password by replacing
     `[password]` with the right value.
 
-3.  Run `docker-compose up` to launch everything. On first launch, it'll take
+4.  Run `docker-compose up` to launch everything. On first launch, it'll take
     about 30 to 60 seconds to fully seed itself with `db/food_products.sql.zip`.
 
-4.  Now, you can visit http://localhost:3000 in a web browser!
+5.  Now, you can visit http://localhost:3000 in a web browser!
 
 If Docker is too annoying to use, just grab `./db/food_products.sql.zip` -- it's
 a full Postgres database dump. Also, [`postgrest`](http://postgrest.org) could
@@ -42,7 +44,9 @@ http://localhost:3000/food_products?q=plfts.ice+cream
 ## Of Interest
 
 - `db/Dockerfile` is relevant if you want to see how to make a Docker image that self-seeds with data on launch (no db setup steps for dev/CI/test environment!)
-- `db/food_products.sql.zip` is a Postgres database dump
+- `db/create_readonly_role.sql` does what it says –– but it was embarassingly
+  tricky to find out all I needed to do for such a role. Hoping it saves you
+  time.
 
 ## License
 

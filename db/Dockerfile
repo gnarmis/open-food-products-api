@@ -8,7 +8,6 @@ WORKDIR /app
 
 COPY create_readonly_role.sql .
 
-# I know, but it's only like 16 MB! Felt simpler to just check it into the repo
 COPY food_products.sql.zip .
 
 RUN unzip food_products.sql.zip
