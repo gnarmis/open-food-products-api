@@ -2,7 +2,7 @@
 
 This is a free, self-hostable API about food products (Branded Food Products
 Database) from the [USDA](https://www.ars.usda.gov/northeast-area/beltsville-md-bhnrc/beltsville-human-nutrition-research-center/nutrient-data-laboratory/docs/usda-branded-food-products-database/), collected via public-private partnership. Included are
-~2.3 million food products, their manufacturer, UPC number, ingredients, and
+~240K food products, their manufacturer, UPC number, ingredients, and
 also nutritional information. Up to date as of Jan 2019.
 
 Powered by [postgrest](https://github.com/PostgREST/postgrest), because I already cleaned up and put together a postgres database based on information from the BFDL database from USDA.
