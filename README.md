@@ -5,7 +5,12 @@ Database) from the [USDA](https://www.ars.usda.gov/northeast-area/beltsville-md-
 ~240K food products, their manufacturer, UPC number, ingredients, and
 also nutritional information. Up to date as of Jan 2019.
 
-Powered by [postgrest](https://github.com/PostgREST/postgrest), because I already cleaned up and put together a postgres database based on information from the BFDL database from USDA.
+Powered by [postgrest](https://github.com/PostgREST/postgrest), because I wanted
+to learn it. Turns out, it's super practical if you are okay preparing a
+postgres database for it to use! And it's FAST –– it uses the db to render JSON,
+and even supports authentication and authorization using the db in a sane way!
+All I needed to do was to figure out how to create a readonly role and tell
+postgrest to use that for all unauthenticated users.
 
 **Demo API** running on a \$5 Digital Ocean droplet: https://open-food-api-demo.kilotau.com/.
 
