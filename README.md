@@ -44,6 +44,6 @@ http://localhost:3000/food_products?q=plfts.ice+cream
 - `db/Dockerfile` is relevant if you want to see how to make a Docker image that self-seeds with data on launch (no db setup steps for dev/CI/test environment!)
 - `db/food_products.sql.zip` is a Postgres database dump
 
-## Lience
+## License
 
 MIT. See `./LICENSE`.
